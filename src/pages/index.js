@@ -12,6 +12,8 @@ import IntroText from "../components/IntroText/introText"
 import BreakerLarge from "../components/BreakerLarge/breakerLarge"
 import Breaker from "../components/Breaker/breaker"
 import CardList from "../components/CardList/cardList"
+import MasonaryGrid from "../components/MasonaryGrid/masonaryGrid";
+import BlogGrid from "../components/BlogGrid/blogGrid";
 
 const IndexPage = () => (
   <Layout>
@@ -137,6 +139,8 @@ eyebrow="Portfolio"
   buttonTopRight={false}
  primary={true}
   />
+
+  <MasonaryGrid/>
   
 
 </BreakerLarge>
@@ -188,6 +192,8 @@ eyebrow="News"
   buttonTopRight={false}
  primary={true}
   />
+
+  <BlogGrid/>
 
 </Breaker>
 

@@ -191,11 +191,13 @@ eyebrow="Testimonials"
   title='Vincent Wasswa'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   showRating={true}
+  secondary={true}
   />
   <Card 
   title='Vincent Wasswa'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   showRating={true}
+  secondary={true}
   />
 
   </CardList>
@@ -228,19 +230,27 @@ eyebrow="News"
 
 {/* Contact  Section Start */}
 
-<Breaker background='#181c26' twoCol={false} >
+<Breaker background='#181c26' twoCol={true} >
+<IntroText 
 
-<CardList>
-  <Card 
-  title='Say hello'
-  body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  titleH2="Say Hello" 
+  linkSrc='/' 
+  body='Tel: +1(845) 391-1805. Email: info@neverendingsolutions.com'
+  linkText='Contact Us'
+  componentPosition='left'
+  buttonTopRight={false}
+ primary={true}
   />
-  <Card 
-  title='Contact Info'
-  body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
-  />
+    <IntroText 
 
-  </CardList>
+  titleH2="Contact Info" 
+  linkSrc='/' 
+  linkText='View Map'
+  body='201 Frozen Ridge Road. Newburgh NY. 12550'
+  componentPosition='left'
+  buttonTopRight={false}
+ primary={true}
+  />
 
 
 </Breaker>

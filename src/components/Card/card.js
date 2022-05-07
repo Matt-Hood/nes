@@ -27,14 +27,19 @@ const card = (props) => {
       <Typography variant="body2">
        {body}
       </Typography>
-    </CardContent>
-{
+      <p   style={{ marginBottom: "-5rem", marginTop: "2rem"}}>
+      {
   showRating ? <StarRatingComponent 
   name="rate1" 
   starCount={5}
   value={4}
+
 /> : ''
 }
+      </p>
+  
+    </CardContent>
+
    
   </Card>
     

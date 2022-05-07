@@ -21,7 +21,12 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          <StaticImage
+      src="./assets/never-ending-solutions-logo-white.svg"
+      quality={95}
+      formats={["auto", "webp", "avif"]}
+      alt="Hamburger menu icon"
+    />
         </Link>
       </h2>
     

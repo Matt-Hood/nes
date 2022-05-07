@@ -7,13 +7,14 @@ import Button from "../atom/Button/button"
 const introText = (props) => {
 
   const {
-    eyebrow, titleH1, titleH2, titleDecorator, body, linkText, linkSrc, componentPosition, buttonTopRight, primary
+    eyebrow, titleH1, titleH2, titleDecorator, body, linkText, linkSrc, componentAlignment= 'center', buttonTopRight, primary, background = '#'
   } = props
 
   return (
-    <div className={styles.introTextContainer}>
+    <div className={styles.introTextContainer} >
        {/* style={{backgroundImage: `url(${arrow})`}} */}
-      <div className={styles.introTextContainerInner} style={componentPosition ? {textAlign:`${componentPosition}`} : '' }>
+       
+      <div className={styles.introTextContainerInner} style={componentAlignment ? {alignItems:`${componentAlignment}`} : '' }>
       {eyebrow ? eyebrow : ''}
 <h1>
 {titleH1 ? titleH1 : ''}
@@ -22,7 +23,10 @@ const introText = (props) => {
 {titleH2 ? titleH2 : ''}
 </h2>
 
-{body ? body : ''}
+<p>
+{ body ? body : ''}
+</p>
+
 
 {
 !buttonTopRight ? <Button
@@ -36,7 +40,7 @@ primary={primary}
 buttonTopRight ? <Button
 to={linkSrc}
 text={linkText}
-primary={primary}
+
 /> : ''}
 </div>
   )

@@ -38,7 +38,7 @@ const IndexPage = () => (
   linkSrc='/' 
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   linkText='Contact Us'
-  componentPosition='center'
+  componentAlignment='center'
   buttonTopRight={false}
   />
   <CardList>

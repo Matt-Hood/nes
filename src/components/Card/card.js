@@ -12,10 +12,10 @@ import LanguageIcon from '@mui/icons-material/Language';
 
 const card = (props) => {
   const {
-    eyebrow, logo, title, titleH2, body, componentPosition, logoPosition, logoName, logoNameAttribution, primary, secondary, showRating
+    eyebrow, logo, title, titleH2, body, componentPosition, logoPosition, logoName, logoNameAttribution, primary, secondary, showRating, background = '#14153b'
   } = props
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 275 , background: `${background}`}}>
       <LanguageIcon/>
     <CardContent>
     

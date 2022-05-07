@@ -1,21 +1,31 @@
 import React from 'react'
 import { Link } from "gatsby"
 import * as styles from './style.module.scss';
+import { StaticImage } from "gatsby-plugin-image"
 
 import Button from "../atom/Button/button"
 
 const introText = (props) => {
 
   const {
-    eyebrow, titleH1, titleH2, titleDecorator, body, linkText, linkSrc, componentAlignment= 'center', buttonTopRight, primary, background = '#'
+    eyebrow, titleH1, titleH2, titleDecorator, textAlignment = 'left', body, linkText, linkSrc, componentAlignment= 'center', buttonTopRight, primary, background = '#'
   } = props
 
   return (
     <div className={styles.introTextContainer} >
-       {/* style={{backgroundImage: `url(${arrow})`}} */}
+
        
       <div className={styles.introTextContainerInner} style={componentAlignment ? {alignItems:`${componentAlignment}`} : '' }>
-     <h4>
+     <h4> 
+       { eyebrow ? 
+           <StaticImage
+           src="./assets/infinity-landscape.svg"
+           quality={95}
+           formats={["auto", "webp", "avif"]}
+           alt="Hamburger menu icon"
+           style={{  marginRight: "1rem" }}
+         /> : ''
+       }
      {eyebrow ? eyebrow : ''}
        </h4> 
 <h1>
@@ -25,7 +35,7 @@ const introText = (props) => {
 {titleH2 ? titleH2 : ''}
 </h2>
 
-<p>
+<p style={textAlignment ? {textAlign:`${textAlignment}`} : '' }>
 { body ? body : ''}
 </p>
 

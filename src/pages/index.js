@@ -30,16 +30,17 @@ const IndexPage = () => (
   quality={95}
   formats={["auto", "webp", "avif"]}
   alt="A Gatsby astronaut"
-  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.9)", marginTop: "-4rem", opacity: ".4" }}
+  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.9)", margin: "1rem 0", opacity: ".4", marginBottom: '4rem' }}
 />
   </div>
   <IntroText 
   titleH1="Digital Agency" 
   linkSrc='/' 
-  body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   linkText='Contact Us'
   componentAlignment='center'
   buttonTopRight={false}
+  textAlignment='center'
   />
   <CardList>
   <Card 
@@ -49,6 +50,7 @@ const IndexPage = () => (
   <Card 
   title='Big Ideas'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  secondary={true}
   />
     <Card 
   title='Creative'
@@ -74,6 +76,8 @@ eyebrow="About Us"
   componentPosition='left'
   buttonTopRight={false}
  primary={true}
+ textAlignment='left'
+ componentAlignment='left'
   />
 <StaticImage
   src="../images/astro.png"

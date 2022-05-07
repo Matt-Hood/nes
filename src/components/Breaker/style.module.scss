@@ -12,3 +12,11 @@ display: flex;
 flex-direction: row;
 padding: 4rem;
 }
+
+@include breakpoint($bp-sm-dwn) {
+    .breakerTwoCol {
+        flex-wrap: wrap;
+    
+    }
+  }
+  

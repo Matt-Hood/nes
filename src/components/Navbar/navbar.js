@@ -1,40 +1,70 @@
-import React, {useState, useEffect} from 'react'
-import { FaBars, FaTimes} from "react-icons/fa"
-import { IconContext } from "react-icons/lib"
+import React, { useState, useContext } from 'react'
+import {slide as Menu} from 'react-burger-menu'
+import { StaticImage } from "gatsby-plugin-image"
+import * as styles from './style.module.scss';
 
-const Navbar = () => {
-    const [click, setClick] = useState(false)
-    const [scroll, setScroll] = useState(false)
+// make a new context
+const MyContext = React.createContext();
 
-    const changeNav = () => {
-        if (window.scrollY >= 80) {
-            setScroll(true)
-        } else {
-            setScroll(false)
-        }
-    }
-
-    useEffect(() => {
-        changeNav()
-        window.addEventListener("scroll", changeNav)
-    }, [])
-
-    return (
-    
- <IconContext.Provider value={{color: '#141414'}}>
-    <Nav active={scroll} click={click}>
-        <NavbarContainer>
-            <NavLogo to="/">
-                <NavIcon>
-                    EXPLORE
-                </NavIcon>
-            </NavLogo>
-        </NavbarContainer>
-
-</Nav>
-
-</IconContext.Provider>
-)
+// create the provider
+const MyProvider = (props) => {
+  const [menuOpenState, setMenuOpenState] = useState(false)
+  
+  return (
+    <MyContext.Provider value={{
+      isMenuOpen: menuOpenState,
+      toggleMenu: () => setMenuOpenState(!menuOpenState),
+      stateChangeHandler: (newState) => setMenuOpenState(newState.isOpen)
+    }}>
+      {props.children}
+    </MyContext.Provider>
+  )
 }
 
-export default Navbar 
+// create a button that calls a context function to set a new open state when clicked
+const Button = () => {
+  const ctx = useContext(MyContext)
+  return (
+    <button className={styles.hamburgerMenuButton} onClick={ctx.toggleMenu}  style={{ color: `#fff`, backgroundColor: `transparent`, borderColor: 'transparent' }}>
+
+<StaticImage
+      src="./assets/hamburger-menu.svg"
+      quality={95}
+      style={{ transform: `rotateY(180deg)`, color: `#fff`, backgroundColor: `#fff` }}
+      formats={["auto", "webp", "avif"]}
+      alt="Hamburger menu icon"
+    />
+    </button>
+  )
+}
+
+// create a navigation component that wraps the burger menu
+const Navigation = () => {
+  const ctx = useContext(MyContext)
+
+  return (
+    <Menu 
+      customBurgerIcon={false}
+      isOpen={ctx.isMenuOpen}
+      onStateChange={(state) => ctx.stateChangeHandler(state)}
+    > 
+     <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+    </Menu>
+  )
+}
+
+// default export here
+const Navbar = () => {
+  return (
+    <MyProvider>
+      <div>
+        <Button />
+        <Navigation />
+      </div>
+    </MyProvider>
+  )
+}
+
+export default Navbar;

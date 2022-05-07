@@ -8,6 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import LanguageIcon from '@mui/icons-material/Language';
+import * as styles from './style.module.scss';
 
 
 const card = (props) => {
@@ -15,11 +16,10 @@ const card = (props) => {
     eyebrow, logo, title, titleH2, body, componentPosition, logoPosition, logoName, logoNameAttribution, primary, secondary, showRating, background = '#14153b'
   } = props
   return (
-    <Card sx={{ minWidth: 275 , background: `${background}`}}>
-      <LanguageIcon/>
+    <Card className={styles.card} sx={{ minWidth: 275 , background: `${background}`}}>
     <CardContent>
-    
-      <Typography variant="h5" component="div">
+    <LanguageIcon/>
+      <Typography variant="h5" component="div"  sx={{ padding: '1rem 0', fontWeight: 'bold' }}>
         {title}
       </Typography>
       <Typography variant="body2">

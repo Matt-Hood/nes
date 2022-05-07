@@ -25,7 +25,7 @@ const itemData = [
 
 const masonaryGrid = () => {
   return (
-    <Box sx={{overflowY: 'scroll' }}>
+    <Box sx={{overflowY: 'scroll', maxWidth: '1300px', margin: '0 auto' }}>
     <ImageList variant="woven" cols={2} gap={8}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>

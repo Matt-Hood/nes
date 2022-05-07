@@ -15,7 +15,9 @@ const introText = (props) => {
        {/* style={{backgroundImage: `url(${arrow})`}} */}
        
       <div className={styles.introTextContainerInner} style={componentAlignment ? {alignItems:`${componentAlignment}`} : '' }>
-      {eyebrow ? eyebrow : ''}
+     <h4>
+     {eyebrow ? eyebrow : ''}
+       </h4> 
 <h1>
 {titleH1 ? titleH1 : ''}
 </h1>

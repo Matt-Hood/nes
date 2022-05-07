@@ -4,6 +4,8 @@
  display: flex;
  flex-direction: column;
  padding: 4rem;
+ max-width: $bp-lg;
+ margin-inline:  auto; 
 }
 
 
@@ -11,12 +13,18 @@
 display: flex;
 flex-direction: row;
 padding: 4rem;
+max-width: $bp-lg;
+margin-inline:  auto; 
 }
+
 
 @include breakpoint($bp-sm-dwn) {
     .breakerTwoCol {
         flex-wrap: wrap;
     
     }
+    .breakerTwoCol, .breakerOneCol  {
+        max-width: 90%;
+    } 
   }
   

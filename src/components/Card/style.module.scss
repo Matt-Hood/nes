@@ -1,0 +1,28 @@
+@import 'src/global/utils/init';
+
+.card {
+   *{
+    font-family: $font-primary !important;
+   } 
+   svg {
+    transform: scale(2.5);
+    margin-left: 0.7rem;
+   }
+    min-width: 256px !important;
+    border-radius: 16px !important;
+    color: $color-white !important;
+    padding: 5rem 3rem;
+    &:hover {
+      cursor: pointer !important;
+      box-shadow: '0 6px 12px 0  $color-black';
+    }
+
+}
+
+@include breakpoint($bp-sm-dwn) {
+    .cardList {
+        flex-wrap: wrap;
+    
+    }
+  }
+  

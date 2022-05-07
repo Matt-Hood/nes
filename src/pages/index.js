@@ -30,7 +30,7 @@ const IndexPage = () => (
   quality={95}
   formats={["auto", "webp", "avif"]}
   alt="A Gatsby astronaut"
-  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.5)", marginTop: "-4rem", opacity: ".4" }}
+  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.9)", marginTop: "-4rem", opacity: ".4" }}
 />
   </div>
   <IntroText 

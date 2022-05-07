@@ -3,12 +3,15 @@
 .cardList {
     display: flex;
     gap: 2rem;
+    max-width: $bp-lg;
+    margin-inline:  auto;
 
 }
 
 @include breakpoint($bp-sm-dwn) {
     .cardList {
         flex-wrap: wrap;
+        max-width: 90%;
     
     }
   }

@@ -11,8 +11,11 @@ const breaker = (props) => {
     background,
   } = props;
   return (
-    <section className={ !!twoCol ? styles.breakerTwoCol : styles.breakerOneCol} style={background ? {background:`${background}`} : '' }>
-    {props.children}
+
+    <section style={background ? {background:`${background}`} : '' } >
+      <div className={ !!twoCol ? styles.breakerTwoCol : styles.breakerOneCol}>
+      {props.children}
+      </div>
     </section>
   )
 }

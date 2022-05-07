@@ -6,6 +6,9 @@ display: flex;
 justify-content: space-between;
 margin-top: -1rem;
 padding: 0 1rem;
+max-width: $bp-lg;
+margin-inline:  auto;
+transform: translateY(1rem);
 
 
 background: transparent;
@@ -24,3 +27,13 @@ img {
     position: sticky;
     top: 0;
 }
+
+
+
+@include breakpoint($bp-sm-dwn) {
+    .mainNav {
+        max-width: 90%;
+    
+    }
+  }
+  

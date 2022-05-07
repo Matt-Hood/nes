@@ -5,12 +5,12 @@
     height: fit-content;
     width: 100%;
     padding: 4rem;
+    max-width: $bp-lg;
+    margin-inline:  auto;
     
     // background-color: $color-nes-dark-purple;
 
     section {
-        max-width: $bp-lg;
-margin-inline:  auto;
         display: grid;
         place-content: center;
     }
@@ -37,12 +37,7 @@ place-content: center;
 
 @include breakpoint($bp-sm-dwn) {
     .breakerLarge {
-  
-        // background-color: $color-nes-dark-purple;
-    
-        section {
-            max-width: 90%;
-        }
+        max-width: 90%;
         }
 
   }

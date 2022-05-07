@@ -22,4 +22,5 @@
     @extend .secondaryButton;
     background: linear-gradient(.25turn, $color-nes-dark-pink , 70%, $color-nes-light-purple);
     padding: 7px 20px;
+    border: unset;
 }

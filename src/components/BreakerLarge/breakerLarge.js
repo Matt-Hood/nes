@@ -10,8 +10,11 @@ const breakerLarge = (props) => {
       } = props;
     
   return (
-    <section className={ !!isHero ? styles.breakerLarge : ''}  style={background ? {background:`${background}`} : '' }>
+    <section style={background ? {background:`${background}`} : '' }  >
+    <div className={ !!isHero ? styles.breakerLarge : ''}  style={background ? {background:`${background}`} : ''} >
     {props.children}
+    </div>
+
     </section>
   )
 }

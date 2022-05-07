@@ -8,7 +8,7 @@ import Button from "../atom/Button/button"
 const introText = (props) => {
 
   const {
-    eyebrow, titleH1, titleH2, titleDecorator, textAlignment = 'left', body, linkText, linkSrc, componentAlignment= 'center', buttonTopRight, primary, background = '#'
+    eyebrow, titleH1, titleH2, titleDecorator, textAlignment = 'left', body, linkText, linkSrc, componentAlignment= 'left', buttonTopRight, primary, background = '#'
   } = props
 
   return (
@@ -28,11 +28,12 @@ const introText = (props) => {
        }
      {eyebrow ? eyebrow : ''}
        </h4> 
-<h1>
+<h1 style={textAlignment ? {textAlign:`${textAlignment}`} : ''}>
 {titleH1 ? titleH1 : ''}
 </h1>
 <h2>
 {titleH2 ? titleH2 : ''}
+{titleH2 ? <span style={{  height: '15px', width: '15px', display: 'block', borderRadius: '50%', background:'linear-gradient(.25turn, #e62a7c , 70%, #6a2c90)'  }}></span> : ''}
 </h2>
 
 <p style={textAlignment ? {textAlign:`${textAlignment}`} : '' }>

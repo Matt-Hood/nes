@@ -41,6 +41,7 @@ const IndexPage = () => (
   componentAlignment='center'
   buttonTopRight={false}
   textAlignment='center'
+  componentAlignment='center'
   />
   <CardList>
   <Card 
@@ -79,7 +80,8 @@ eyebrow="About Us"
  textAlignment='left'
  componentAlignment='left'
   />
-<StaticImage
+  <div>
+  <StaticImage
   src="../images/astro.png"
   width={300}
   height={500}
@@ -87,6 +89,18 @@ eyebrow="About Us"
   formats={["auto", "webp", "avif"]}
   alt="A Gatsby astronaut"
 />
+<StaticImage
+  src="../images/wave.png"
+  width={300}
+  height={500}
+  quality={95}
+  formats={["auto", "webp", "avif"]}
+  alt="A Gatsby astronaut"
+  style={{ transform: "scale(.5)", position: 'absolute', right: '0', bottom: '-1rem'}}
+/>
+
+  </div>
+
 
 </Breaker>
 
@@ -105,6 +119,8 @@ eyebrow="Services"
   componentPosition='left'
   buttonTopRight={false}
  primary={true}
+ textAlignment='left'
+ componentAlignment='left'
   />
 
 <CardList>
@@ -117,6 +133,7 @@ eyebrow="Services"
   <Card 
   title='Networking'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  secondary={true}
   />
     <Card 
   title='Health'

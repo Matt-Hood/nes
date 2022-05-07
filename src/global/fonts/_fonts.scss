@@ -1,0 +1,72 @@
+// Font-face rules.
+
+@font-face {
+  font-family:' ModernEra';
+  src: url('/fonts/ModernEra-Light.woff2') format('woff2'),
+    url('/fonts/ModernEra-Light.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: 200;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+@font-face {
+  font-family:' ModernEra';
+  src: url('/fonts/ModernEra-LightItalic.woff2') format('woff2'),
+    url('/fonts/ModernEra-LightItalic.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: 200;
+  font-style: italic;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+@font-face {
+  font-family: 'ModernEra';
+  src: url('/fonts/ModernEra-Regular.woff2') format('woff2'),
+    url('/fonts/ModernEra-Regular.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: normal;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+@font-face {
+  font-family: 'ModernEra';
+  src: url('/fonts/ModernEra-Italic.woff2') format('woff2'),
+    url('/fonts/ModernEra-Italic.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: normal;
+  font-style: italic;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+@font-face {
+  font-family: 'ModernEra';
+  src: url('/fonts/ModernEra-Bold.woff2') format('woff2'),
+    url('/fonts/ModernEra-Bold.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: bold;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+@font-face {
+  font-family: 'ModernEra';
+  src: url('/fonts/ModernEra-BoldItalic.woff2') format('woff2'),
+    url('/fonts/ModernEra-BoldItalic.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: bold;
+  font-style: italic;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+
+@font-face {
+  font-family: 'ModernEraMono';
+  src: url('/fonts/ModernEraMono-Regular.woff') format('woff2'),
+    url('/fonts/ModernEraMono-Regular.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: normal;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+@font-face {
+  font-family: 'ModernEraMono';
+  src: url('/fonts/ModernEraMono-Bold.woff2') format('woff2'),
+    url('/fonts/ModernEraMono-Bold.woff') format('woff'); // sass-lint:disable-line indentation
+  font-weight: bold;
+  font-display: fallback; // sass-lint:disable-line no-misspelled-properties
+}
+
+
+

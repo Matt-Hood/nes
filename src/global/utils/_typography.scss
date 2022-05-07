@@ -1,0 +1,93 @@
+// Type
+//
+// Using Google Fonts.
+$font-primary: 'ModernEra', sans-serif;
+$font-secondary: 'ModernEraMono', sans-serif;
+$font-secondary-bold: 'ModernEra', serif;
+
+@mixin font-primary {
+  font-family: $font-primary;
+}
+
+@mixin font-secondary {
+  font-family: $font-secondary;
+}
+
+@mixin font-secondary-bold {
+  font-family: $font-secondary;
+}
+
+// Font weight vars.
+$font-weight-bold: bold;
+$font-weight-medium: medium;
+$font-weight-normal: normal;
+$font-weight-light: 200;
+
+// Global styles for headings.
+// Font size setup to be 10px = 1rem.
+@mixin font-size-heading1 {
+  font-size: 96px;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 111px;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: 150px;
+  }
+}
+
+@mixin font-size-heading2 {
+  font-size: 32px;
+  color: map-get($mc-colors, primary);
+
+  @include breakpoint($bp-xsm) {
+    font-size: 40px;
+  }
+
+  @include breakpoint($bp-md) {
+    font-size: 48px;
+  }
+}
+
+@mixin font-size-heading3 {
+  font-size: 24px;
+  color: map-get($mc-colors, primary);
+
+  @include breakpoint($bp-xsm) {
+    font-size: 36px;
+  }
+}
+
+@mixin font-size-heading4 {
+  font-size: 1rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 1.1rem;
+  }
+}
+
+// CHEEZ-76 ends at h4.
+@mixin font-size-heading5 {
+  font-size: 1rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 1.25rem;
+  }
+}
+
+@mixin font-size-heading6 {
+  font-size: 1rem;
+
+  @include breakpoint($bp-xsm) {
+    font-size: 1rem;
+  }
+}
+
+:export {
+  fontfamilies: {
+    primary: $font-primary;
+    secondary: $font-secondary;
+    secondary-bold: $font-secondary-bold;
+  }
+}

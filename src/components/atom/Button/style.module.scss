@@ -1,0 +1,25 @@
+@import 'src/global/utils/init'; 
+
+
+.secondaryButton {
+    display: block;
+    background-color: transparent;
+    text-transform: uppercase;
+    max-width: 10rem;
+    border: none;
+    color: $color-white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    border: 1px solid $color-white;
+
+}
+
+.primaryButton {
+    @extend .secondaryButton;
+    background: linear-gradient(.25turn, $color-nes-dark-pink , 70%, $color-nes-light-purple);
+    padding: 7px 20px;
+}

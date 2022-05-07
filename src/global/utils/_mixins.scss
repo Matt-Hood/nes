@@ -1,0 +1,121 @@
+//=======================================================
+// Mixins
+//=======================================================
+
+// Clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+// Vertically/Horizontaly center an element
+@mixin vertical-horizontal-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+  z-index: $zi-low;
+}
+
+// Creates sunrise-yellow rule that spans about 170px wide
+@mixin rule($color: $color-sunrise-yellow, $stop: 0, $width: 160px) {
+  &::before {
+    content: '';
+    display: block;
+    width: $width;
+    height: 2px;
+    background: $color;
+    position: absolute;
+    bottom: $stop;
+    left: calc(50% - #{$width} / 2);
+  }
+}
+
+// allows to add opacity overlay to elements
+@mixin overlay($opacity: 0.75, $color: $color-navy-blue, $top: 0) {
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: $top;
+    left: 0;
+    background: $color;
+    opacity: $opacity;
+    z-index: $zi-lowest;
+  }
+}
+
+// Standard top/bottom margins which are applied to content
+// containers to overlap hero image.
+@mixin container-pull-up($bottom: false) {
+  // margin-top: -65px;
+  @if $bottom == true {
+    margin-bottom: 65px;
+  }
+}
+
+// This will add 3 colors divided into 3 parts that is
+// used in homepage
+@mixin with-3-colors-on-top() {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: linear-gradient(to right,
+    #00a0ba 0, #00a0ba 33.333%,
+    $color-happy-orange 33.333%, $color-happy-orange 66.666%,
+    $color-sunrise-yellow 66.666%, $color-sunrise-yellow 100%);
+  }
+}
+
+@mixin content-container {
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  @include breakpoint($bp-sm) {
+    max-width: calc(100% - 80px);
+    padding: 50px 30px;
+  }
+
+  @include breakpoint($bp-lg) {
+    max-width: $c-max-width;
+  }
+}

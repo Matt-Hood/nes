@@ -1,0 +1,56 @@
+// Baseline styling for form elements.
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='tel'],
+input[type='date'] {
+  @include font-primary;
+  appearance: none;
+  border: 2px solid $color-blue-gray;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+input:focus {
+  // sass-lint:disable-line no-qualifying-elements
+  box-shadow: 0 0 3px $color-deep-blue, 0 0 7px $color-deep-blue;
+}
+
+/**
+ * radio and checkbox styles.
+ */
+input[type='checkbox']:not(old),
+input[type='radio']:not(old) {
+  width: 28px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+input[type='checkbox']:not(old) + label,
+input[type='radio']:not(old) + label {
+  background: url('/assets/icon-checkbox.svg') no-repeat 0 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: -28px;
+  padding-left: 28px;
+}
+
+input[type='checkbox']:not(old):checked + label,
+input[type='radio']:not(old):checked + label {
+  background-image: url('/assets/icon-checkbox--checked.svg');
+}
+
+input[type='checkbox']:not(old):focus + label,
+input[type='radio']:not(old):focus + label {
+  outline-color: $color-deep-blue;
+  outline-style: auto;
+  outline-width: 5px;
+}

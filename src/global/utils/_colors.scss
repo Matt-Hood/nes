@@ -1,0 +1,74 @@
+// Colors
+//
+// All Sass color variables prefixed with $color-.
+// This makes it easy to figure out what a variable
+// is for later.
+
+// Primary Brand Colors
+$color-deep-blue: #003954;
+$color-ocean-blue: #0069F6;
+$color-mc-blue: #0069F6;
+$color-mc-blue-drk: #0069F6;
+$color-sunrise-yellow: #fdb714;
+$color-happy-orange: #f75c06;
+$color-nes-dark-purple: #160f20;
+$color-nes-light-purple: #6a2c90;
+$color-nes-dark-pink: #e62a7c;
+
+// Grays, Black and White
+$color-black: #000;
+$color-blue-gray: #99b0ba;
+$color-white: #fff;
+$color-sleek-silver: #edf2f4;
+
+$mc-colors: (
+  primary: $color-white,
+  light: $color-white,
+  dark: $color-white,
+  black: #000,
+  text: #2C2C3E,
+  ice: #E5F0FF,
+
+);
+
+// Accent Colors:
+$color-purple-heart: #3b3591;
+$color-ocean-blue-light: #007e9a;
+$color-gold-standard: #F2AF01;
+
+// Neutral Colors:
+$color-navy-blue: #012635;
+$color-gunmetal-gray: #5b727c;
+$color-blue-gray: #99b0ba;
+$color-high-tech-gray: #ccd7dd;
+
+// Extra
+$color-green: #4aa564;
+$color-red: #cd2026;
+$color-gray: #D2D2DD;
+
+
+
+// New Branding
+$color-ice: #E5F0FF;
+
+
+// Exporting the variables here so we can display them in the style guide.
+:export {
+  // sass-lint:disable-block no-misspelled-properties no-color-keywords
+  neutral: {
+    black: $color-black;
+    gunmetalgray: $color-gunmetal-gray;
+    bluegray: $color-blue-gray;
+    white: $color-white;
+    sleeksilver: $color-sleek-silver;
+  }
+  primary: {
+    navyblue: $color-navy-blue;
+    oceanblue: $color-ocean-blue;
+    goldstandard: $color-gold-standard;
+    sunriseyellow: $color-sunrise-yellow;
+    green: $color-green;
+    red: $color-red;
+  }
+}

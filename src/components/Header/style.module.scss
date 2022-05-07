@@ -1,0 +1,19 @@
+@import 'src/global/utils/init';
+
+.mainNav {
+max-width: 1600px;
+display: flex;
+justify-content: space-between;
+position: sticky;
+top: 0;
+background: transparent;
+padding: 1rem;
+svg {
+    path {
+        fill: $color-white;
+      }
+}
+img {
+    transform: rotateY(180deg);
+}
+}

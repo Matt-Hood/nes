@@ -1,0 +1,14 @@
+@import 'src/global/utils/init';
+
+.mainNav {
+max-width: 1600px;
+margin: 0 auto;
+}
+
+.introTextContainer {
+    color: $color-white;
+}
+.introTextContainerInner {
+   display: flex;
+   flex-direction: column;
+}

@@ -4,6 +4,7 @@ import * as styles from './style.module.scss';
 
 import Button from "../components/atom/Button/button"
 import Card from "../components/Card/card"
+import LanguageIcon from '@mui/icons-material/Language';
 
 
 import Layout from "../components/Layout/layout"
@@ -29,7 +30,7 @@ const IndexPage = () => (
   quality={95}
   formats={["auto", "webp", "avif"]}
   alt="A Gatsby astronaut"
-  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.5)", marginTop: "-4rem" }}
+  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.5)", marginTop: "-4rem", opacity: ".4" }}
 />
   </div>
   <IntroText 
@@ -66,7 +67,7 @@ const IndexPage = () => (
 <Breaker background='#181c26' twoCol={true} >
 <IntroText 
 eyebrow="About Us"
-  titleH1="We bring business to life" 
+  titleH2="We bring business to life" 
   linkSrc='/' 
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   linkText='Contact Us'
@@ -93,7 +94,7 @@ eyebrow="About Us"
 <Breaker background='#160f20' twoCol={false} >
 <IntroText 
 eyebrow="Services"
-  titleH1="We do everything" 
+  titleH2="We do everything" 
   linkSrc='/' 
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   linkText='See All'
@@ -103,6 +104,8 @@ eyebrow="Services"
   />
 
 <CardList>
+
+
   <Card 
   title='Tech Services'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
@@ -131,7 +134,7 @@ eyebrow="Services"
   </div>
   <IntroText 
 eyebrow="Portfolio"
-  titleH1="Some of our finest moments" 
+  titleH2="Some of our finest moments" 
   linkSrc='/' 
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   linkText='See All'
@@ -153,7 +156,7 @@ eyebrow="Portfolio"
 <Breaker background='#160f20' twoCol={false} >
 <IntroText 
 eyebrow="Testimonials"
-  titleH1="What clients say" 
+  titleH2="What clients say" 
   linkSrc='/' 
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   linkText='See All'
@@ -166,10 +169,12 @@ eyebrow="Testimonials"
   <Card 
   title='Vincent Wasswa'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  showRating={true}
   />
   <Card 
   title='Vincent Wasswa'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  showRating={true}
   />
 
   </CardList>
@@ -184,7 +189,7 @@ eyebrow="Testimonials"
 <Breaker background='#160f20' twoCol={false} >
 <IntroText 
 eyebrow="News"
-  titleH1="Blog" 
+  titleH2="Blog" 
   linkSrc='/' 
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   linkText='See All'

@@ -53,6 +53,7 @@ primary={primary}
 buttonTopRight ? <Button
 to={linkSrc}
 text={linkText}
+primary={primary}
 
 /> : ''}
 </div>

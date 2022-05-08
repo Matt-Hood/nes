@@ -121,6 +121,7 @@ eyebrow="Services"
  primary={true}
  textAlignment='left'
  componentAlignment='left'
+ buttonTopRight={true}
   />
 
 <CardList>
@@ -162,6 +163,7 @@ eyebrow="Portfolio"
   componentPosition='left'
   buttonTopRight={false}
  primary={true}
+ buttonTopRight={true}
   />
 
   <MasonaryGrid/>
@@ -219,6 +221,7 @@ eyebrow="News"
   componentPosition='left'
   buttonTopRight={false}
  primary={true}
+ buttonTopRight={true}
   />
 
   <BlogGrid/>

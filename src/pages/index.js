@@ -125,15 +125,18 @@ eyebrow="Services"
   <Card 
   title='Tech Services'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  textAlignment='center'
   />
   <Card 
   title='Networking'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   secondary={true}
+  textAlignment='center'
   />
     <Card 
   title='Health'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
+  textAlignment='center'
   />
   </CardList>
 </Breaker>

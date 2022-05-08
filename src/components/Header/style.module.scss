@@ -33,6 +33,9 @@ img {
 @include breakpoint($bp-sm-dwn) {
     .mainNav {
         max-width: 90%;
+        padding: unset;
+       margin-top: -3rem;
+       padding-bottom: 3rem;
     
     }
   }

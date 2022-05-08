@@ -66,6 +66,15 @@ margin: 0 auto;
 @include breakpoint($bp-sm-dwn) {
     .introTextContainer {
 max-width: 90%;
+flex-wrap: wrap;
+justify-content: flex-start;
+
+h4 {
+    margin-bottom: 1rem;
+}
+    }
+    .introTextContainerInner {
+        max-width: 90%;
     }
   }
   

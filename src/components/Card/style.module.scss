@@ -20,9 +20,9 @@
 }
 
 @include breakpoint($bp-sm-dwn) {
-    .cardList {
+    .card {
         flex-wrap: wrap;
-    
+        padding: 3rem 0rem;
     }
   }
   

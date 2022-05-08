@@ -26,7 +26,7 @@ $font-weight-light: 200;
 // Global styles for headings.
 // Font size setup to be 10px = 1rem.
 @mixin font-size-heading1 {
-  font-size: 96px;
+  font-size: 62px;
 
   @include breakpoint($bp-xsm) {
     font-size: 111px;

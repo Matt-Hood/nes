@@ -37,7 +37,22 @@ place-content: center;
 
 @include breakpoint($bp-sm-dwn) {
     .breakerLarge {
-        max-width: 90%;
+    
+        * {
+            max-width: 95%;
+            margin: 0 auto;
+        }
+        P {
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+        a {
+            font-size: 1rem;
+            margin: unset;
+            margin-top: 3rem;
+            margin-bottom: 7rem;
+        }
+        padding: 2rem;
         }
 
   }

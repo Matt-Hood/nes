@@ -1,12 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from './style.module.scss';
-
-import Button from "../components/atom/Button/button"
 import Card from "../components/Card/card"
-import LanguageIcon from '@mui/icons-material/Language';
-
-
 import Layout from "../components/Layout/layout"
 import Seo from "../components/seo"
 import IntroText from "../components/IntroText/introText"
@@ -30,9 +25,11 @@ const IndexPage = () => (
   quality={95}
   formats={["auto", "webp", "avif"]}
   alt="A Gatsby astronaut"
-  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.9)", margin: "1rem 0", opacity: ".4", marginBottom: '4rem' }}
+  style={{  filter: "drop-shadow(30px 10px 4px black)", transform: "scale(.9)", margin: "3rem 0", opacity: ".4", marginBottom: '4rem' }}
+ 
 />
   </div>
+
   <IntroText 
   titleH1="Digital Agency" 
   linkSrc='/' 
@@ -88,6 +85,7 @@ eyebrow="About Us"
   quality={95}
   formats={["auto", "webp", "avif"]}
   alt="A Gatsby astronaut"
+  className={styles.hideOnMobile}
 />
 <StaticImage
   src="../images/wave.png"
@@ -97,11 +95,10 @@ eyebrow="About Us"
   formats={["auto", "webp", "avif"]}
   alt="A Gatsby astronaut"
   style={{ transform: "scale(.5)", position: 'absolute', right: '0', bottom: '-1rem'}}
+  className={styles.hideOnMobile}
 />
 
   </div>
-
-
 </Breaker>
 
 {/* About Us Section End*/}
@@ -125,8 +122,6 @@ eyebrow="Services"
   />
 
 <CardList>
-
-
   <Card 
   title='Tech Services'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
@@ -140,10 +135,7 @@ eyebrow="Services"
   title='Health'
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
   />
-
   </CardList>
-
-
 </Breaker>
 
 {/* Services Section End*/}
@@ -165,10 +157,7 @@ eyebrow="Portfolio"
  primary={true}
  buttonTopRight={true}
   />
-
   <MasonaryGrid/>
-  
-
 </BreakerLarge>
 
 {/* Portfolio  Section End */}
@@ -202,10 +191,7 @@ eyebrow="Testimonials"
   showRating={true}
   secondary={true}
   />
-
   </CardList>
-
-
 </Breaker>
 
 {/* Testimonial  Section End */}
@@ -224,9 +210,7 @@ eyebrow="News"
  primary={true}
  buttonTopRight={true}
   />
-
   <BlogGrid/>
-
 </Breaker>
 
 {/* News  Section End */}
@@ -246,7 +230,6 @@ eyebrow="News"
  primary={true}
   />
     <IntroText 
-
   titleH2="Contact Info" 
   linkSrc='/' 
   linkText='View Map'
@@ -255,8 +238,6 @@ eyebrow="News"
   buttonTopRight={false}
  primary={true}
   />
-
-
 </Breaker>
 {/* Contact  Section End */}
   

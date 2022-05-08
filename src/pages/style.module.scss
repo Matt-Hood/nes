@@ -5,3 +5,12 @@
 display: grid;
 place-content: center;
 }
+
+@include breakpoint($bp-sm-dwn) {
+.hideOnMobile {
+    display: none;
+}
+.marginTopMobile {
+    transform: translateY(-1rem);
+}
+}

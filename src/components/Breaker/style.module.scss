@@ -26,12 +26,30 @@ position: relative;
 
 
 @include breakpoint($bp-sm-dwn) {
+
     .breakerTwoCol {
         flex-wrap: wrap;
+        > div {
+            padding-right: unset;
+            margin-right: unset;
+        }
+
     
     }
     .breakerTwoCol, .breakerOneCol  {
         max-width: 90%;
+        a {
+            font-size: 1rem;
+        
+            margin-bottom: 10rem;
+            margin-top: 0rem;
+        }
     } 
+    .breakerTwoCol {
+        padding: unset;
+margin: unset; 
+margin: 0 auto;
+padding: 2rem;
+    }
   }
   

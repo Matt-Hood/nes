@@ -182,10 +182,11 @@ eyebrow="Testimonials"
   titleH2="What clients say" 
   linkSrc='/' 
   body='Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.'
-  linkText='See All'
+  linkText='See More'
   componentPosition='left'
   buttonTopRight={false}
  primary={true}
+ buttonTopRight={true}
   />
 
 <CardList>

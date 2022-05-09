@@ -5,15 +5,16 @@ max-width: 1600px;
 display: flex;
 justify-content: space-between;
 margin-top: -1rem;
-padding: 0 1rem;
+padding: 1rem 0;
 max-width: $bp-lg;
 margin-inline:  auto;
 transform: translateY(1rem);
 z-index: 10000000000000;
+background: transparent; 
+button {
+    padding: unset;
+}
 
-
-background: transparent;
-padding: 1rem;
 svg {
     path {
         fill: $color-white;

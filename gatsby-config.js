@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
+   'gatsby-plugin-pointer-events',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

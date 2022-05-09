@@ -28,6 +28,8 @@ html {
   -webkit-text-size-adjust: 100%; /* 3 */
   font-size: 100%;
   overflow-x: hidden;
+  pointer-events: all !important; 
+
 }
 
 // https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
@@ -174,6 +176,8 @@ a {
   &:active,
   &:hover {
     outline-width: 0;
+    cursor: pointer;
+    
   }
 }
 

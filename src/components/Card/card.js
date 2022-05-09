@@ -21,7 +21,7 @@ const card = (props) => {
     <Card className={styles.card} sx={{ minWidth: 275 , background: `${cardBackgroundColor}`, textAlign: `${textAlignment}`, position: 'relative'}}>
     <CardContent>
 {
-  textAlignment === 'center' ? <LanguageIcon sx={{ position: 'absolute', top: '2rem', zIndex: '9000000', backgroundColor: '#fff', marginLeft: 'unset', color: '#000', borderRadius: '6px'}}/> : 
+  textAlignment === 'center' ? <LanguageIcon sx={{ position: 'absolute', top: '2rem', backgroundColor: '#fff', marginLeft: 'unset', color: '#000', borderRadius: '6px'}}/> : 
   <LanguageIcon sx={{ marginLeft: '.7rem'}}/>
 }
    

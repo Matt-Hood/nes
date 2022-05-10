@@ -1,28 +1,30 @@
 @import 'src/global/utils/init';
 
 .mainNav {
-max-width: 1600px;
-display: flex;
-justify-content: space-between;
-margin-top: -1rem;
-padding: 1rem 0;
-max-width: $bp-lg;
-margin-inline:  auto;
-transform: translateY(1rem);
-z-index: 10000000000000;
-background: transparent; 
-button {
-    padding: unset;
-}
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1rem;
+    padding: 1rem 0;
+    max-width: $bp-lg;
+    margin-inline: auto;
+    transform: translateY(1rem);
+    z-index: 10000000000000;
+    background: transparent;
 
-svg {
-    path {
-        fill: $color-white;
-      }
-}
-img {
-    transform: rotateY(180deg);
-}
+    button {
+        padding: unset;
+    }
+
+    svg {
+        path {
+            fill: $color-white;
+        }
+    }
+
+    img {
+        transform: rotateY(180deg);
+    }
 }
 
 .sticky {
@@ -38,9 +40,8 @@ img {
     .mainNav {
         max-width: 90%;
         padding: unset;
-       margin-top: -3rem;
-       padding-bottom: 3rem;
-    
+        margin-top: -3rem;
+        padding-bottom: 3rem;
+
     }
-  }
-  
+}

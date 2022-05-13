@@ -1,16 +1,21 @@
-@import 'src/global/utils/init'; 
+@import 'src/global/utils/init';
 
 
 .centerGatsbyImage {
-display: grid;
-place-content: center;
+    display: grid;
+    place-content: center;
+}
+
+.hideOnMobile {
+    display: block;
 }
 
 @include breakpoint($bp-sm-dwn) {
-.hideOnMobile {
-    display: none;
-}
-.marginTopMobile {
-    transform: translateY(-1rem);
-}
+    .hideOnMobile {
+        display: none !important;
+    }
+
+    .marginTopMobile {
+        transform: translateY(-1rem);
+    }
 }

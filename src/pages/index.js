@@ -78,11 +78,10 @@ const IndexPage = () => (
         textAlignment="left"
         componentAlignment="left"
       />
-      <div>
+      <div className={styles.hideOnMobile}>
         <StaticImage
           src="../images/astro.png"
           width={300}
-          height={500}
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt="A Gatsby astronaut"

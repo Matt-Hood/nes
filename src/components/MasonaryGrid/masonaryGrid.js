@@ -1,44 +1,74 @@
-import React from 'react'
+import React from "react"
 
-import Box from '@mui/material/Box';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
+import Box from "@mui/material/Box"
+import ImageList from "@mui/material/ImageList"
+import ImageListItem from "@mui/material/ImageListItem"
+import Scbd from "./assets/scbd.jpg"
+import TDM from "./assets/tdm.jpg"
+import Launchpad from "./assets/rotunda.jpg"
+import Home from "./assets/home.jpg"
+import Hyperflick from "./assets/hyperflick.png"
+import NA from "./assets/na.jpg"
+import { Link } from "gatsby"
 
 const itemData = [
-    {
-      img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',
-      title: 'Bed',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1525097487452-6278ff080c31',
-      title: 'Books',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
-      title: 'Sink',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
-        title: 'Sink',
-      },
-  ];
+  {
+    img: `${Scbd}`,
+    title: "Smooth Colors By Design",
+    url: "#",
+  },
+  {
+    img: `${TDM}`,
+    title: "Tasty Diabetic Meals",
+    url: "#",
+  },
+  {
+    img: `${Home}`,
+    title: "Home",
+    url: "#",
+  },
+  {
+    img: `${NA}`,
+    title: "Narcotics Anonymous ",
+    url: "#",
+  },
+  {
+    img: `${Hyperflick}`,
+    title: "Hyper Flick",
+    url: "#",
+  },
+  {
+    img: `${Launchpad}`,
+    title: "Launchpad ",
+    url: "#",
+  },
+]
 
 const masonaryGrid = () => {
   return (
-    <Box sx={{overflowY: 'scroll', maxWidth: '1300px', margin: '0 auto' }}>
-    <ImageList variant="woven" cols={2} gap={8}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}?w=248&fit=crop&auto=format`}
-            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-            alt={item.title}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
-  </Box>
+    <section>
+      <Box
+        sx={{
+          overflowY: "scroll",
+          maxWidth: "1300px",
+          margin: "0 auto",
+          padding: "4rem 0",
+        }}
+      >
+        <ImageList variant="woven" cols={2} gap={20}>
+          {itemData.map(item => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`≈?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </Box>
+    </section>
   )
 }
 

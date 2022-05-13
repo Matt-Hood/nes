@@ -14,6 +14,12 @@
   color: $color-white !important;
   padding: 5rem 3rem;
 
+  .iconContainer {
+    display: flex;
+    // justify-content: center;
+    width: 99%;
+  }
+
   &:hover {
     cursor: pointer !important;
 

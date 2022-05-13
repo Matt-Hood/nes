@@ -42,20 +42,25 @@ const card = props => {
       }}
     >
       <CardContent>
-        {textAlignment === "center" ? (
-          <LanguageIcon
-            sx={{
-              position: "absolute",
-              top: "2rem",
-              backgroundColor: "#fff",
-              marginLeft: "unset",
-              color: "#000",
-              borderRadius: "6px",
-            }}
-          />
-        ) : (
-          <LanguageIcon sx={{ marginLeft: ".7rem" }} />
-        )}
+        <div
+          className={styles.iconContainer}
+          style={textAlignment ? { justifyContent: `${textAlignment}` } : ""}
+        >
+          {textAlignment === "center" ? (
+            <LanguageIcon
+              sx={{
+                position: "absolute",
+                top: "3rem",
+                backgroundColor: "#fff",
+                marginLeft: "unset",
+                color: "#000",
+                borderRadius: "6px",
+              }}
+            />
+          ) : (
+            <LanguageIcon sx={{ marginLeft: ".7rem" }} />
+          )}
+        </div>
 
         <Typography
           variant="h5"

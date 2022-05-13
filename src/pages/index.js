@@ -222,7 +222,8 @@ const IndexPage = () => (
       <IntroText
         titleH2="Say Hello"
         linkSrc="/"
-        body="Tel: +1(845) 391-1805. Email: info@neverendingsolutions.com"
+        body="Tel: +1(845) 391-1805."
+        bodyTwo="Email: matthood@neverendingsolutions.com"
         linkText="Contact Us"
         componentPosition="left"
         buttonTopRight={false}
@@ -232,7 +233,8 @@ const IndexPage = () => (
         titleH2="Contact Info"
         linkSrc="/"
         linkText="View Map"
-        body="201 Frozen Ridge Road. Newburgh NY. 12550"
+        body="201 Frozen Ridge Road."
+        bodyTwo="Newburgh NY. 12550"
         componentPosition="left"
         buttonTopRight={false}
         primary={true}

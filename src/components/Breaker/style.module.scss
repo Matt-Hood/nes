@@ -1,55 +1,61 @@
-@import 'src/global/utils/init'; 
+@import 'src/global/utils/init';
 
 .breakerOneCol {
- display: flex;
- flex-direction: column;
- padding: 4rem 0;
- max-width: $bp-lg;
- margin-inline:  auto; 
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    max-width: $bp-lg;
+    margin-inline: auto;
 }
 
 
 .breakerTwoCol {
-display: flex;
-flex-direction: row;
-padding: 4rem 0;
-max-width: $bp-lg;
-margin-inline:  auto; 
-position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 0;
+    max-width: $bp-lg;
+    margin-inline: auto;
+    position: relative;
 
-> div {
-    max-width: 40rem;
-    padding-right: 2rem;
-    margin-right: 10rem;
-}
+    >div {
+        max-width: 40rem;
+        padding-right: 2rem;
+        margin-right: 10rem;
+    }
 }
 
 
 @include breakpoint($bp-sm-dwn) {
 
     .breakerTwoCol {
+        height: fit-content;
         flex-wrap: wrap;
-        > div {
+
+        >div {
             padding-right: unset;
             margin-right: unset;
         }
 
-    
+
     }
-    .breakerTwoCol, .breakerOneCol  {
+
+    .breakerTwoCol,
+    .breakerOneCol {
+        height: fit-content;
         max-width: 90%;
+
         a {
             font-size: 1rem;
-        
+
             margin-bottom: 10rem;
             margin-top: 0rem;
         }
-    } 
+    }
+
     .breakerTwoCol {
         padding: unset;
-margin: unset; 
-margin: 0 auto;
-padding: 2rem;
+        margin: unset;
+        margin: 0 auto;
+        padding: 2rem;
     }
-  }
-  
+}

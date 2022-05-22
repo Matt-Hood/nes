@@ -38,7 +38,16 @@ const IndexPage = () => (
       <IntroText
         titleH1="Innovative Solutions"
         linkSrc="/"
-        body="To make a difference and impact lives, requires a team effort. That is our commitment. To provide solutions to help you solve problems in order to achieve the mission of your business."
+        body="Neverending solutions provides top
+quality digital services to our clients.
+We are a full service UI/UX, digital
+content management,software
+development, digital marketing, and
+web design agency. Our team is
+dedicated to providing the services
+your business needs with the
+capabilities to address and overcome
+any potential obstacles."
         linkText="Contact Us"
         componentAlignment="center"
         buttonTopRight={false}

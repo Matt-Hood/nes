@@ -28,11 +28,6 @@ const itemData = [
     url: "#",
   },
   {
-    img: `${NA}`,
-    title: "Narcotics Anonymous ",
-    url: "#",
-  },
-  {
     img: `${Hyperflick}`,
     title: "Hyper Flick",
     url: "#",

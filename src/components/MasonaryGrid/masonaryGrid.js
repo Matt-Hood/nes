@@ -8,7 +8,6 @@ import TDM from "./assets/tdm.jpg"
 import Launchpad from "./assets/rotunda.jpg"
 import Home from "./assets/home.jpg"
 import Hyperflick from "./assets/hyperflick.png"
-import NA from "./assets/na.jpg"
 import { Link } from "gatsby"
 
 const itemData = [

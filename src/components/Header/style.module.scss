@@ -8,9 +8,10 @@
     padding: 1rem 0;
     max-width: $bp-lg;
     margin-inline: auto;
-    transform: translateY(1rem);
+    transform: translateY(0rem);
     z-index: 10000000000000;
-    background: transparent;
+    background: #211730;
+    box-shadow: #211730 1005px 0px 0px 0px, #211730 -1010px 0px 0px 0px;
 
     button {
         padding: unset;

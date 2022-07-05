@@ -77,9 +77,9 @@ any potential obstacles."
     <Breaker background="#181c26" twoCol={true}>
       <IntroText
         eyebrow="About Us"
-        titleH2="We bring business to life"
+        titleH2="Our Purpose"
         linkSrc="/"
-        body="Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus."
+        body="In our world today people and businesses are faced with varying problems.The mission of never ending solutions is to facilitate the transformation of your problem into a viable digital solution."
         linkText="Contact Us"
         componentPosition="left"
         buttonTopRight={false}
@@ -120,9 +120,9 @@ any potential obstacles."
     <Breaker background="#160f20" twoCol={false}>
       <IntroText
         eyebrow="Services"
-        titleH2="We do everything"
+        titleH2="Our Team"
         linkSrc="/"
-        body="Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus."
+        body="It takes a team to evaluate a concern for a client. Our diversified team bring their commitment and creative outlook to provide innovative approaches to solve every challenge."
         linkText="See All"
         componentPosition="left"
         buttonTopRight={false}
